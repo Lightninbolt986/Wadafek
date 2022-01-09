@@ -2,8 +2,7 @@
 > A simple mini-game bot which supports both text and slash inputs. Made for Hackathon hosted by [Documatic](https://documatic.com)
 
 ## Made by-
-> → *[lightninbolt986#3111](https://discordapp.com/users/543031298130837510)*
-> → *[Senpai#2473](https://discordapp.com/users/654639494481313792)*
+> → *[lightninbolt986#3111](https://discordapp.com/users/543031298130837510)*  > → *[Senpai#2473](https://discordapp.com/users/654639494481313792)*
 
 ## Commands
 > → `ping` - Is the bot alive?\n> → `help` - Help embed, what else.
