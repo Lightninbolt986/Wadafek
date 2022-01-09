@@ -7,7 +7,7 @@
 
 ## Commands
 > → `ping` - Is the bot alive?
-> → `help` - Help embed, what else.
+ → `help` - Help embed, what else.
 > → `door` - Test your luck with game "Door of faith".
 > → `race` - Compete with upto 20 players in a race. 5 Modes.
 > → `virus` - Play a game of eliminating the virus.
