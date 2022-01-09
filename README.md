@@ -1,4 +1,4 @@
-# Wadafek — Made in 4 days
+# Wadafek — Made in 5 days
 > A simple mini-game bot which supports both text and slash inputs. Made for Hackathon hosted by [Documatic](https://documatic.com)
 
 ## Made by
