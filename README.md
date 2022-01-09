@@ -16,4 +16,4 @@
 > A **BIG** thanks to [Documatic](https://documatic.com) for giving us the opportunity to participate in this hackathon and enable us to compete with others to learn more. We genuinely had fun doing this project and had a unique experience. 
 
 
-## Invite bot - [Link here](https://discord.com/oauth2/authorize?client_id=929616576691449926&scope=bot&permissions=2147798016)
+## Invite bot - [Link here](https://discord.com/oauth2/authorize?client_id=929616576691449926&scope=bot&permissions=2147798016%20applications.commands)
