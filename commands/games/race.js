@@ -175,7 +175,7 @@ module.exports = {
         .setThumbnail("https://media.discordapp.net/attachments/892704135244283916/912067079123918888/PicsArt_11-22-01.18.32.png")
         .setTitle('🚩 New Race! 🚩')
         .setDescription('Click on \`Join Race\` button to enter the race.\nOnly the first 20 people can enter!')
-        .setFooter('Starts in 60 seconds')
+        .setFooter({text:'Starts in 60 seconds'})
         .setColor("BLURPLE")
       ],
       components: [joinon]

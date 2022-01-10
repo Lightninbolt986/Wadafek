@@ -39,12 +39,12 @@ module.exports = {
             })
             e = e.filter(m => m.highTime != 0)
 let m = ' '
-if(e[0]) m=m+`<:neo_gold:877031189985230868>\u2502**${client.users.cache.get(e[0].userID).tag}** - \`${(e[0].highTime)/1000}sec\`\n`
+if(e[0]) m=m+`<:neo_gold:877031189985230868>\u2502**${client.users.cache.get(e[0].userID)?.tag?client.users.cache.get(e[0].userID)?.tag:'Unknown'}** - \`${(e[0].highTime)/1000}sec\`\n`
 else m = m + `Leaderboard is empty`
-if(e[2]) m=m+`<:neo_bronze:877030829732298784>\u2502**${client.users.cache.get(e[2].userID).tag}** - \`${(e[2].highTime)/1000}sec\`\n`
-if(e[1]) m=m+`<:neo_silver:877030960070262794>\u2502**${client.users.cache.get(e[1].userID).tag}** - \`${(e[1].highTime)/1000}sec\`\n`
-if(e[3]) m=m+`<:bp_dot:918074237992988722>\u2502**${client.users.cache.get(e[3].userID).tag}** - \`${(e[3].highTime)/1000}sec\`\n`
-if(e[4]) m=m+`<:bp_dot:918074237992988722>\u2502**${client.users.cache.get(e[4].userID).tag}** - \`${(e[4].highTime)/1000}sec\`\n`
+if(e[2]) m=m+`<:neo_bronze:877030829732298784>\u2502**${client.users.cache.get(e[2].userID)?.tag?client.users.cache.get(e[0].userID)?.tag:'Unknown'}** - \`${(e[2].highTime)/1000}sec\`\n`
+if(e[1]) m=m+`<:neo_silver:877030960070262794>\u2502**${client.users.cache.get(e[1].userID)?.tag?client.users.cache.get(e[0].userID)?.tag:'Unknown'}** - \`${(e[1].highTime)/1000}sec\`\n`
+if(e[3]) m=m+`<:bp_dot:918074237992988722>\u2502**${client.users.cache.get(e[3].userID)?.tag?client.users.cache.get(e[0].userID)?.tag:'Unknown'}** - \`${(e[3].highTime)/1000}sec\`\n`
+if(e[4]) m=m+`<:bp_dot:918074237992988722>\u2502**${client.users.cache.get(e[4].userID)?.tag?client.users.cache.get(e[0].userID)?.tag:'Unknown'}** - \`${(e[4].highTime)/1000}sec\`\n`
 const {MessageEmbed} = require('discord.js')
 const embed = new MessageEmbed().setTitle('Global Leaderboard - Door').setURL("https:\/\/www.youtube.com\/watch?v=xvFZjo5PgG0").setColor(5793266).setDescription(m)
             message.channel.send({embeds:[embed]})

@@ -91,6 +91,7 @@ const badDoors = [{
     comment: 'The zombie cracked your head open, only to find it empty.'
 }]
 const isPlaying = new Set();
+const getAttach = require('../../merge.js')
 module.exports = {
     name: 'choosethedoor',
     description: 'Play a game of choose the door',
@@ -238,25 +239,6 @@ module.exports = {
 function randomFromArray(arr) {
     return arr[Math.floor(Math.random() * arr.length)];
 }
-async function getAttach(finalEmos, name) {
-    const {
-        MessageAttachment
-    } = require('discord.js')
-    const {
-        readFileSync,
-    } = require('fs');
-    const util = require('util');
-    const exec = util.promisify(require('child_process').exec);
-    try {
-        await exec(`py e.py ${finalEmos[0]} ${finalEmos[1]} ${finalEmos[2]} ${name}`);
-        let p = readFileSync(`./${name}.png`)
-        const attachment = new MessageAttachment(p, 'img.png')
-        return attachment
-
-    } catch (e) {
-        console.error(e); // should contain code (exit code) and signal (that caused the termination).
-    }
-}
 
 function randomNumber(min, max) {
     min = Math.ceil(min);
@@ -310,7 +292,6 @@ async function play(msg, score, profileData, drow, isPlaying, interaction) {
                 });
             }
             try {
-                require('fs').unlinkSync(`./${msg.channel.id}.png`)
             } catch (e) {
                 console.log(e)
             }
@@ -340,7 +321,6 @@ async function play(msg, score, profileData, drow, isPlaying, interaction) {
                 components: [drow]
             })
             try {
-                require('fs').unlinkSync(`./${msg.channel.id}.png`)
             } catch (e) {
                 console.log(e)
             }
